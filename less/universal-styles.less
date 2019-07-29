@@ -17,13 +17,13 @@ body {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         @media only screen and (min-width: 768px) {
-            font-size: 2.5rem;
+            font-size: 3remrem;
         }
 
         @media only screen and (min-width: 1200px) {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -35,8 +35,14 @@ body {
         font-size: 1.5rem;
     }
 
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: @h;
+    }
+
     p {
         font-size: 1rem;
+        font-family: @p;
+        line-height: 1.5;
     }
 } //closes body
 
@@ -65,10 +71,14 @@ body {
         flex-direction: column;
         margin-top: 20px;
          
-        @media only screen and (min-width: 768px) {
+        @media @tablet {
             flex-direction: row;
             flex-wrap: row wrap;
         } //media query
+
+        @media @desktop {
+            width: 85%;
+        }
 
            .halves {
                 width: 100%;
@@ -77,6 +87,7 @@ body {
                     width: 50%;
                 }
             }
+
 
     }//about
 }

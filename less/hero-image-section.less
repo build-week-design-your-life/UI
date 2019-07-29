@@ -13,7 +13,8 @@
     .flex-layout-styles(center, center);
 
         h2 {
-            .pad-it(0px, 20px);
+            .pad-it(0px, 30px);
+            color: white;
         }
 
         a {
@@ -22,6 +23,10 @@
             width: 50%;
             .flex-layout-styles(center, center);
 
+            @media @mobile {
+                width: 70%;
+            }
+
             div {
                 width: 50%;
                 background: white;
@@ -29,6 +34,10 @@
                 .pad-it(20px, 20px);
                 .flex-layout-styles(center, center);
                 border-radius: 20px;
+
+                @media @mobile {
+                    width: 100%;
+                }
             }
         }
 

@@ -144,16 +144,16 @@ body h1 {
   }
 }
 body h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 @media only screen and (min-width: 768px) {
   body h2 {
-    font-size: 2.5rem;
+    font-size: 3remrem;
   }
 }
 @media only screen and (min-width: 1200px) {
   body h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 body h3 {
@@ -162,8 +162,19 @@ body h3 {
 body h4 {
   font-size: 1.5rem;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a {
+  font-family: "Raleway", sans-serif;
+}
 body p {
   font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 .container {
   width: 90%;
@@ -191,10 +202,15 @@ body p {
   flex-direction: column;
   margin-top: 20px;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container .about {
     flex-direction: row;
     flex-wrap: row wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .container .about {
+    width: 85%;
   }
 }
 .container .about .halves {
@@ -224,7 +240,7 @@ header .container h1 {
 }
 @media only screen and (min-width: 768px) {
   header .container h1 {
-    width: 55%;
+    width: 60%;
     text-align: left;
   }
 }
@@ -240,7 +256,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 30%;
   }
 }
 nav a {
@@ -248,14 +264,25 @@ nav a {
   text-decoration: none;
   padding-bottom: 20px;
 }
+@media (min-width: 768px) {
+  nav a {
+    padding-bottom: 0px;
+  }
+}
 h3 {
   width: 100%;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 @media (max-width: 767px) {
   figure {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+h4 {
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 .hero-image {
   min-height: 500px;
@@ -276,7 +303,8 @@ h3 {
 }
 .hero-image .container h2 {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  color: white;
 }
 .hero-image .container a {
   text-decoration: none;
@@ -285,6 +313,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .hero-image .container a {
+    width: 70%;
+  }
 }
 .hero-image .container a div {
   width: 50%;
@@ -296,6 +329,11 @@ h3 {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .hero-image .container a div {
+    width: 100%;
+  }
 }
 figure {
   width: 100%;
