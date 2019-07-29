@@ -127,7 +127,8 @@ table {
   border-spacing: 0;
 }
 body {
-  font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 body h1 {
   font-size: 3rem;
@@ -158,8 +159,11 @@ body h2 {
 body h3 {
   font-size: 1.9rem;
 }
+body h4 {
+  font-size: 1.5rem;
+}
 body p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .container {
   width: 90%;
@@ -204,7 +208,6 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px blue solid;
   flex-wrap: wrap;
 }
 @media only screen and (min-width: 768px) {
@@ -215,11 +218,12 @@ header .container {
 header .container h1 {
   width: 100%;
   text-align: center;
-  border: 1px purple solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   header .container h1 {
-    width: 50%;
+    width: 55%;
     text-align: left;
   }
 }
@@ -229,7 +233,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px red solid;
 }
 @media only screen and (min-width: 768px) {
   nav {
@@ -242,7 +245,19 @@ nav {
 nav a {
   font-size: 1.2rem;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 h3 {
   width: 100%;
+}
+figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure img {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
 }
