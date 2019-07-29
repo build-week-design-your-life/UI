@@ -4,12 +4,19 @@ header {
         border: 1px blue solid;
         flex-wrap: wrap;
 
+        @media only screen and (min-width: 768px) {
+            justify-content: space-between;
+        }
+
         h1 {
             width: 100%;
+            text-align: center;
+
+            border: 1px purple solid;
 
             @media only screen and (min-width: 768px) {
-                .flex-layout-styles(flex-start, center);
                 width: 50%;
+                text-align: left;
             }
         }
     }
@@ -19,10 +26,16 @@ nav {
     width: 100%;
     flex-wrap: wrap;
     .flex-layout-styles(space-around, center);
+    border: 1px red solid;
 
     @media only screen and (min-width: 768px){
         .flex-layout-styles(space-between, center);
         width: 40%;
+    }
+
+    a {
+        font-size: 1.2rem;
+        text-decoration: none;
     }
 
 

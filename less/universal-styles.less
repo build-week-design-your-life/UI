@@ -1,12 +1,76 @@
+//fonts and sizes//
+
+body {
+    font-size: 62.5%;
+
+    h1 {
+        font-size: 3rem;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 3rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+} //closes body
+
+
+//divs and layout//
+
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 
     @media only screen and (min-width: 768px) {
-        width: 90%;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     @media only screen and (min-width: 1200px) {
-        width: 80%;
+        width: 70%;
+    }
+
+    .about {
+        width: 100%;
+        .flex-layout-styles(justify, center);
+        flex-direction: column;
+         
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: row wrap;
+        }
+    }
+
+    .halves {
+        width: 100%;
+
+        @media only screen and (min-width: 768) {
+            width: 50%;
+        }
     }
 }
+

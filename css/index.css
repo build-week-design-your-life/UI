@@ -126,18 +126,78 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-size: 62.5%;
+}
+body h1 {
+  font-size: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  body h1 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body h1 {
+    font-size: 4rem;
+  }
+}
+body h2 {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body h2 {
+    font-size: 3rem;
+  }
+}
+body h3 {
+  font-size: 1.9rem;
+}
+body p {
+  font-size: 1.3rem;
+}
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 80%;
+    width: 70%;
+  }
+}
+.container .about {
+  width: 100%;
+  display: flex;
+  justify-content: justify;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .container .about {
+    flex-direction: row;
+    flex-wrap: row wrap;
+  }
+}
+.container .halves {
+  width: 100%;
+}
+@media only screen and (min-width: 768) {
+  .container .halves {
+    width: 50%;
   }
 }
 header .container {
@@ -147,15 +207,20 @@ header .container {
   border: 1px blue solid;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 768px) {
+  header .container {
+    justify-content: space-between;
+  }
+}
 header .container h1 {
   width: 100%;
+  text-align: center;
+  border: 1px purple solid;
 }
 @media only screen and (min-width: 768px) {
   header .container h1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     width: 50%;
+    text-align: left;
   }
 }
 nav {
@@ -164,6 +229,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 1px red solid;
 }
 @media only screen and (min-width: 768px) {
   nav {
@@ -172,4 +238,11 @@ nav {
     align-items: center;
     width: 40%;
   }
+}
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+h3 {
+  width: 100%;
 }
