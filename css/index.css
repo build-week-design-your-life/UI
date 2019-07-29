@@ -189,6 +189,7 @@ body p {
   justify-content: justify;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 768px) {
   .container .about {
@@ -196,11 +197,11 @@ body p {
     flex-wrap: row wrap;
   }
 }
-.container .halves {
+.container .about .halves {
   width: 100%;
 }
 @media only screen and (min-width: 768) {
-  .container .halves {
+  .container .about .halves {
     width: 50%;
   }
 }
@@ -249,6 +250,52 @@ nav a {
 }
 h3 {
   width: 100%;
+}
+@media (max-width: 767px) {
+  figure {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.hero-image {
+  min-height: 500px;
+  background: url(../images/hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image .container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image .container h2 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.hero-image .container a {
+  text-decoration: none;
+  font-size: 2em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image .container a div {
+  width: 50%;
+  background: white;
+  border: 1px gray solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 figure {
   width: 100%;
