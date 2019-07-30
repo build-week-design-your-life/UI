@@ -288,6 +288,35 @@ nav a {
     padding-bottom: 0px;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+footer .container {
+  border-top: 1px gray solid;
+  border: 2px blue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer .container .social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .social i {
+  font-size: 2rem;
+  padding: 20px;
+}
+footer .container h4 {
+  padding-bottom: 20px;
+}
 h3 {
   width: 100%;
   padding-top: 0px;
