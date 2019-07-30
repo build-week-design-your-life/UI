@@ -1,10 +1,15 @@
 header {
+    background: @header;
+
+    @media @desktop {
+        .pad-it(20px, 20px);
+    }
     .container {
         .flex-layout-styles(center, center);
 
         flex-wrap: wrap;
 
-        @media only screen and (min-width: 768px) {
+        @media @tablet {
             justify-content: space-between;
         }
 
@@ -14,7 +19,7 @@ header {
             .pad-it(20px, 20px);
 
 
-            @media only screen and (min-width: 768px) {
+            @media @tablet {
                 width: 60%;
                 text-align: left;
             }
@@ -36,6 +41,14 @@ nav {
         font-size: 1.2rem;
         text-decoration: none;
         padding-bottom: 20px;
+        color: black;
+
+        &:hover {
+            background: @headers-and-hovers;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
         @media @tablet {
             padding-bottom: 0px;
@@ -55,17 +68,22 @@ footer {
 
     .container {
         border-top: 1px gray solid;
-        border: 2px blue solid;
         .flex-layout-styles(center, center);
         flex-direction: column;
         flex-wrap: wrap;
         .social {
             width: 100%;
             .flex-layout-styles(center, center);
+            
         
             i{
                 font-size: 2rem;
                 padding: 20px;
+                color: black;
+
+                &:hover {
+                    color: @headers-and-hovers;
+                }
             }
         }
      

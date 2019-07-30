@@ -29,10 +29,13 @@ body {
 
     h3 {
         font-size: 1.9rem;
+        width: 100%;
+        .pad-it(0, 15px);
     }
 
     h4 {
         font-size: 1.5rem;
+        .pad-it(0px, 15px);
     }
 
     h1, h2, h3, h4, h5, h6, a {
@@ -108,9 +111,27 @@ body {
             flex-direction: row;
         }
     }
+
+    .bottom {
+        border-bottom: none;
+    }
+
+    .position {
+        text-align: center;
+        padding-top: 20px;
+        background: @headers-and-hovers;
+        color: white;
+        width: 100%;
+
+        @media @tablet {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media @tablet {
+            margin-top: none;
+            margin-bottom: none;
+        }
+        
+    }
 }//container
-
-
-
-
-
