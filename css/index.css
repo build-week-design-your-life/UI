@@ -251,7 +251,7 @@ body p {
 .container .position {
   text-align: center;
   padding-top: 20px;
-  background: #8fb4c2;
+  background: #d0d8db;
   color: white;
   width: 100%;
 }
@@ -261,14 +261,33 @@ body p {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container .position {
     margin-top: none;
     margin-bottom: none;
   }
 }
-header {
+.program h3 {
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .program {
+    padding-bottom: 20px;
+  }
+}
+.halves a {
+  color: black;
+  text-decoration: none;
+}
+.halves a h4:hover {
+  color: white;
   background: #d0d8db;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header {
+  background: #e2e7e9;
 }
 @media (min-width: 1200px) {
   header {
@@ -292,6 +311,7 @@ header .container h1 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #004d1a;
 }
 @media (min-width: 768px) {
   header .container h1 {
@@ -318,10 +338,10 @@ nav a {
   font-size: 1.2rem;
   text-decoration: none;
   padding-bottom: 20px;
-  color: black;
+  color: #004d1a;
 }
 nav a:hover {
-  background: #8fb4c2;
+  background: #d0d8db;
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -355,13 +375,14 @@ footer .container .social {
 footer .container .social i {
   font-size: 2rem;
   padding: 20px;
-  color: black;
+  color: #004d1a;
 }
 footer .container .social i:hover {
-  color: #8fb4c2;
+  color: #d0d8db;
 }
 footer .container h4 {
   padding-bottom: 20px;
+  color: #004d1a;
 }
 .hero-image {
   min-height: 500px;
