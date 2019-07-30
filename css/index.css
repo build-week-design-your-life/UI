@@ -200,25 +200,44 @@ body p {
   justify-content: justify;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container .about {
+    border-bottom: gray solid 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 @media (min-width: 768px) {
   .container .about {
     flex-direction: row;
     flex-wrap: row wrap;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
   .container .about {
     width: 85%;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .container .about .halves {
   width: 100%;
 }
-@media only screen and (min-width: 768) {
+@media (min-width: 768px) {
   .container .about .halves {
     width: 50%;
+  }
+}
+.container .mid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .container .mid {
+    flex-direction: row;
   }
 }
 header .container {
@@ -290,10 +309,14 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    margin-bottom: 30px;
+  }
 }
 .hero-image .container {
   flex-direction: column;
@@ -345,4 +368,9 @@ figure img {
   max-width: 100%;
   margin: 0 auto;
   border-radius: 20px;
+}
+@media (max-width: 767px) {
+  figure {
+    margin-bottom: 20px;
+  }
 }

@@ -69,28 +69,46 @@ body {
         width: 100%;
         .flex-layout-styles(justify, center);
         flex-direction: column;
-        margin-top: 20px;
+        margin: 0 auto;
+
+        @media @mobile {
+            border-bottom: gray solid 1px;
+            .pad-it(20px, 20px);
+        }
+
          
         @media @tablet {
             flex-direction: row;
             flex-wrap: row wrap;
+            margin-top: 20px;
         } //media query
 
         @media @desktop {
             width: 85%;
+            .pad-it(30px, 30px);
         }
 
            .halves {
                 width: 100%;
 
-                @media only screen and (min-width: 768) {
+                @media @tablet {
                     width: 50%;
                 }
-            }
+            } //halves
+
 
 
     }//about
-}
+
+    .mid {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media @tablet {
+            flex-direction: row;
+        }
+    }
+}//container
 
 
 
