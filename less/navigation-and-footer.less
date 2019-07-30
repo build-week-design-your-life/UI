@@ -1,3 +1,7 @@
+//organizes code for the nav bar and the footer
+
+/***nav bar***/
+
 header {
     background: @header;
 
@@ -24,9 +28,9 @@ header {
                 width: 60%;
                 text-align: left;
             }
-        }
-    }
-}
+        } //h1
+    } //container
+} //header
 
 nav {
     width: 100%;
@@ -56,10 +60,13 @@ nav {
         }
 
 
-    }
+    } //closes a
 
 
-}
+} //closes nav
+
+
+/***footer***/
 
 footer {
 
@@ -72,6 +79,7 @@ footer {
         .flex-layout-styles(center, center);
         flex-direction: column;
         flex-wrap: wrap;
+
         .social {
             width: 100%;
             .flex-layout-styles(center, center);
@@ -85,13 +93,13 @@ footer {
                 &:hover {
                     color: @headers-and-hovers;
                 }
-            }
-        }
+            } //closes i
+        } //closes social
      
-    h4 {
-        padding-bottom: 20px;
-        color: @header-wording;
-    }
+        h4 {
+            padding-bottom: 20px;
+            color: @header-wording;
+        } //closes h4
 
     } //close container
 

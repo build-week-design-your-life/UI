@@ -126,6 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/***fonts and sizes***/
 body {
   box-sizing: border-box;
   font-size: 16px;
@@ -181,11 +182,15 @@ body p {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
+/***divs and layout***/
 .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  /***styles the middle section on the index page***/
+  /***styles the bottom of the "main" section***/
+  /***styles the dividers on the "about-us" page***/
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -248,44 +253,7 @@ body p {
 .container .bottom {
   border-bottom: none;
 }
-.container .position {
-  text-align: center;
-  padding-top: 20px;
-  background: #d0d8db;
-  color: white;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .container .position {
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .container .position {
-    margin-top: none;
-    margin-bottom: none;
-  }
-}
-.program h3 {
-  padding-top: 20px;
-}
-@media (max-width: 767px) {
-  .program {
-    padding-bottom: 20px;
-  }
-}
-.halves a {
-  color: black;
-  text-decoration: none;
-}
-.halves a h4:hover {
-  color: white;
-  background: #d0d8db;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+/***nav bar***/
 header {
   background: #e2e7e9;
 }
@@ -351,6 +319,7 @@ nav a:hover {
     padding-bottom: 0px;
   }
 }
+/***footer***/
 footer {
   display: flex;
   justify-content: center;
@@ -461,4 +430,45 @@ figure img {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+/***blurb on the top***/
+.program h3 {
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .program {
+    padding-bottom: 20px;
+  }
+}
+/***divider-headings***/
+.position {
+  text-align: center;
+  padding-top: 20px;
+  background: #d0d8db;
+  color: white;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .position {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .position {
+    margin-top: none;
+    margin-bottom: none;
+  }
+}
+/***handles github links***/
+.halves a {
+  color: black;
+  text-decoration: none;
+}
+.halves a h4:hover {
+  color: white;
+  background: #d0d8db;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

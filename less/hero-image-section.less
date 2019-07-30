@@ -1,3 +1,5 @@
+//organizes the code that handles the hero image and everything therein
+
 .hero-image {
     min-height: 500px;
     background: url(../images/hero-image.jpg);
@@ -37,7 +39,7 @@
                 .pad-it(20px, 20px);
                 .flex-layout-styles(center, center);
                 border-radius: 20px;
-                color: #75328a;
+                color: @login-button;
 
                 @media @mobile {
                     width: 100%;
@@ -47,9 +49,11 @@
                     background: @headers-and-hovers;
                     color: white;
                 }
-            }
-        }
 
-    }
+            } //closes div
+
+        } //closes h2
+
+    }//closes container
     
-}
+}//closes hero image
