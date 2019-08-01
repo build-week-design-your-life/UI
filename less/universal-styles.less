@@ -1,0 +1,134 @@
+//houses fonts and sizes, as well as universal styles and divs from "main" sections
+
+/***fonts and sizes***/
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+
+    h1 {
+        font-size: 3rem;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 3remrem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.9rem;
+        width: 100%;
+        .pad-it(0, 15px);
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        .pad-it(0px, 15px);
+    }
+
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: @h;
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: @p;
+        line-height: 1.5;
+    }
+} //closes body
+
+
+/***divs and layout***/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 70%;
+    }
+
+    .about {
+        width: 100%;
+        .flex-layout-styles(justify, center);
+        flex-direction: column;
+        margin: 0 auto;
+
+        @media @mobile {
+            border-bottom: gray solid 1px;
+            .pad-it(20px, 20px);
+        }
+
+         
+        @media @tablet {
+            flex-direction: row;
+            flex-wrap: row wrap;
+            margin-top: 20px;
+        } //media query
+
+        @media @desktop {
+            width: 85%;
+            .pad-it(30px, 30px);
+        }
+
+           .halves {
+                width: 100%;
+
+                @media @tablet {
+                    width: 50%;
+                }
+
+ 
+                
+            } //halves
+
+
+
+    }//about
+
+    /***styles the middle section on the index page***/
+
+    .mid {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media @tablet {
+            flex-direction: row;
+        }
+    }
+
+    /***styles the bottom of the "main" section***/
+
+    .bottom {
+        border-bottom: none;
+    }
+
+
+
+}//container
+
+
+
+
